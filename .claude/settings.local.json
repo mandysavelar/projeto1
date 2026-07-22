@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --use-npm --turbopack --disable-git)",
+      "Bash(npx --yes create-next-app@latest C:/Users/mandy/AppData/Local/Temp/claude/C--Users-mandy-OneDrive-Documentos-Claude-Code-Projeto-1/716f38e0-ea92-4735-9b8c-19ecbd16bc24/scratchpad/loja-rock-n-roll --typescript --tailwind --eslint --app --no-src-dir --import-alias @/* --use-npm --turbopack --disable-git)",
+      "Bash(mv C:/Users/mandy/AppData/Local/Temp/claude/C--Users-mandy-OneDrive-Documentos-Claude-Code-Projeto-1/716f38e0-ea92-4735-9b8c-19ecbd16bc24/scratchpad/loja-rock-n-roll/* C:/Users/mandy/AppData/Local/Temp/claude/C--Users-mandy-OneDrive-Documentos-Claude-Code-Projeto-1/716f38e0-ea92-4735-9b8c-19ecbd16bc24/scratchpad/loja-rock-n-roll/.[^.]* 'C:/Users/mandy/OneDrive/Documentos/Claude Code/Projeto 1/')",
+      "Bash(mv C:/Users/mandy/AppData/Local/Temp/claude/C--Users-mandy-OneDrive-Documentos-Claude-Code-Projeto-1/716f38e0-ea92-4735-9b8c-19ecbd16bc24/scratchpad/pre-nextjs-backup/CLAUDE.md C:/Users/mandy/AppData/Local/Temp/claude/C--Users-mandy-OneDrive-Documentos-Claude-Code-Projeto-1/716f38e0-ea92-4735-9b8c-19ecbd16bc24/scratchpad/pre-nextjs-backup/.claude 'C:/Users/mandy/OneDrive/Documentos/Claude Code/Projeto 1/')",
+      "Bash(npm run *)",
+      "Bash(npx skills *)",
+      "Read(//c/Users/mandy/.claude/**)",
+      "Bash(claude --version)",
+      "Bash(npm ls *)",
+      "Bash(npm install *)",
+      "Bash(claude doctor *)",
+      "Bash(claude)",
+      "PowerShell([Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\) -split \";\" | Select-String -Pattern \"npm\")",
+      "PowerShell(& \"$env:APPDATA\\\\npm\\\\claude.cmd\" --version)",
+      "Bash(mkdir -p \".claude/skills\" \".claude/regras\")",
+      "Bash(mv \".claude/regras e skills/frontend-design\" \".claude/skills/frontend-design\")",
+      "Bash(mv \".claude/regras e skills/vercel-react-best-practices\" \".claude/skills/vercel-react-best-practices\")",
+      "Bash(mv \".claude/regras e skills/web-design-guidelines\" \".claude/skills/web-design-guidelines\")",
+      "Bash(mv \".claude/regras e skills/rules-global.md.txt\" \".claude/regras/rules-global.md.txt\")",
+      "Bash(claude mcp *)",
+      "Bash(npx ctx7 *)",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs",
+      "PowerShell(claude mcp add chrome-devtools -s project -- npx chrome-devtools-mcp@latest)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)"
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #0d0d0e;
+  --color-ink-soft: #1a181c;
+  --color-paper: #f3eee3;
+  --color-paper-dim: #e8ddc7;
+  --color-blood: #c11f2e;
+  --color-blood-dark: #8f1620;
+  --color-gold: #d9a441;
+  --color-smoke: #9a948a;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-paper: var(--color-paper);
+  --color-paper-dim: var(--color-paper-dim);
+  --color-blood: var(--color-blood);
+  --color-blood-dark: var(--color-blood-dark);
+  --color-gold: var(--color-gold);
+  --color-smoke: var(--color-smoke);
+  --font-display: var(--font-anton);
+  --font-mono: var(--font-space-mono);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+}
+
+* {
+  scrollbar-color: var(--color-blood) var(--color-ink);
+}
+
+::selection {
+  background: var(--color-blood);
+  color: var(--color-paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee 32s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 14s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+  .animate-spin-slow {
+    animation: none;
+  }
+}
