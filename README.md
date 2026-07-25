@@ -1,6 +1,6 @@
-# Loja Rock n Roll
+# Rock n Roll
 
-Landing page de e-commerce para a **Loja Rock n Roll** — camisetas oficiais de bandas, All Star, coturnos e acessórios, "desde 1993 vestindo o rock", direto do Rio de Janeiro para o Brasil inteiro.
+Landing page de e-commerce para a **Rock n Roll** — camisetas oficiais de bandas, All Star, coturnos e acessórios, "desde 1993 vestindo o rock", direto do Rio de Janeiro para o Brasil inteiro.
 
 Construída com Next.js App Router e React Server Components, hoje é uma página institucional/vitrine (hero, categorias, produtos em destaque, história da marca e CTA de contato) — ainda sem carrinho, checkout ou integração com banco de dados.
 
