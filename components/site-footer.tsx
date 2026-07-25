@@ -65,7 +65,7 @@ export function SiteFooter() {
       <div className="mx-auto mt-10 max-w-6xl border-t border-ink-soft pt-6 text-xs text-smoke">
         <p>AIIN Comércio e Confecções LTDA — CNPJ: 73.415.937/0001-00</p>
         <p className="mt-1">
-          &copy; {year} Loja Rock n Roll. Todos os direitos reservados.
+          &copy; {year} Rock n Roll. Todos os direitos reservados.
         </p>
       </div>
     </footer>

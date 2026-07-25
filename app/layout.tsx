@@ -20,7 +20,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Loja Rock n Roll — Desde 1993 vestindo o rock",
+  title: "Rock n Roll — Desde 1993 vestindo o rock",
   description:
     "Camisetas oficiais de bandas, All Star, coturnos e acessórios. Mais de 30 anos de atitude e som alto, direto do Rio de Janeiro para o Brasil inteiro.",
 };
